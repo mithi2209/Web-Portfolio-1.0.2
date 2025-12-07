@@ -39,7 +39,9 @@
 
     header{
         background:rgba(255, 248, 243, 1);
-        background-image: url("../portfolio-resources/images/developer.png"), url("../portfolio-resources/images/header_bg.png") ;
+        background-image: url("../portfolio-resources/images/developer.png"),
+         url("../portfolio-resources/images/header_bg.png") ;
+
         background-repeat: no-repeat;
         background-position: top left , bottom right;
         background-position-y : center , bottom;
@@ -159,66 +161,102 @@
     }
 
 
-    /* Responsive for small devices */
-@media screen and (max-width:576px) {
+/* Responsive for small devices */
+    @media screen and (max-width:576px) {
 
-    nav{
-        flex-direction: column;
-        padding: 20px 30px;
-    }
+        /* Navbar And Banner Section Responsive */
+        nav{
+            flex-direction: column;
+            padding: 20px 30px;
+        }
 
-    nav ul{
-        margin-top: 20px;
-    }
+        nav ul{
+            margin-top: 20px;
+        }
+    
+        .nav-btn {
+            width: 100px;
+            height: 50px;
+        
+        }
+
+        .banner-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0px
+        
+        }
+        .banner-contents{
+            margin: 20px 20px 40px 20px ;
+        }
+        .hero-greeting{
+            font-size: 35px;
+            
+            
+        }
+        .hero-title{
+            font-size: 45px;
+            
+        }
+
+        .banner-des{
+            width: 350px;
+            
+        }
+        .banner-btn{
+            flex-direction: column;
+            align-items: start;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .download-btn,
+        .contact-btn{
+            width: 180px;
+        }
+        .contact-btn{
+            margin-left: 0px;
+        }
+
+        .banner-img img{
+            width: 300px;
+            
+        }
    
-    .nav-btn {
-        width: 100px;
-        height: 50px;
-       
     }
-
-    .banner-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin:0px
-      
-    }
-    .banner-contents{
-        margin: 20px 20px 40px 20px ;
-    }
-    .hero-greeting{
-        font-size: 35px;
-        
-        
-    }
-    .hero-title{
-        font-size: 45px;
-        
-    }
-
-    .banner-des{
-        width: 350px;
-        
-    }
-    .banner-btn{
-        flex-direction: column;
-        align-items: start;
-        margin-top: 20px;
-        gap: 10px;
-     }
-     .download-btn,
-     .contact-btn{
-        width: 180px;
-     }
-     .contact-btn{
-        margin-left: 0px;
-     }
-
-    .banner-img img{
-        width: 300px;
-        
-    }
-   
-}
  
+/* Responsive For Medium Device */
+    @media screen and (min-width:576px) and (max-width:992px){
+        
+        /* Navbar And Banner Section Responsive */
+        nav{
+        padding:30px ;
+      
+        }
+
+        .banner-container{
+            margin: 20px;
+        }
+
+        .hero-greeting{
+            font-size: 35px;
+        }
+        .hero-title{
+            font-size: 45px;
+        }
+        
+        .banner-des{
+            width: 350px;
+        }
+
+        .download-btn,
+        .contact-btn{
+            width: 180px;
+        }
+
+        .banner-img img{
+            width: 350px;
+            
+        }
+
+    }
