@@ -1,0 +1,224 @@
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* Universal Styles */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+/* Shared Styles */
+    .btn-primary{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500 ;
+        background-color: #FD6E0A;
+        border-radius: 5px;
+        border-style: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .btn-primary:hover{
+        background-color: darkgoldenrod;
+    }
+
+
+/* Header Styles */
+
+    header{
+        background:rgba(255, 248, 243, 1);
+        background-image: url("../portfolio-resources/images/developer.png"), url("../portfolio-resources/images/header_bg.png") ;
+        background-repeat: no-repeat;
+        background-position: top left , bottom right;
+        background-position-y : center , bottom;
+        
+    }
+
+
+
+/* Navbar Styles */
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 200px ;
+      
+    }
+
+    .nav-title{
+        font-size: 45px;
+        font-weight: 800;
+        color: #181818;
+    }
+
+    .nav-title span{
+        color: #FD6E0A;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        list-style: none;
+        gap: 50px
+    }
+
+    nav  a{
+        text-decoration: none;
+        color: rgba(71, 71, 71, 1);
+        font-size: 20px;
+        
+    }
+    .nav-btn{
+        width:150px;
+        height: 64px;
+    }
+
+/* Header Details Styles */
+
+    .banner-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        margin: 0 35px 0 200px;
+        
+        
+    }
+    .hero-greeting{
+    color: rgba(71, 71, 71, 1);
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    }
+
+    .hero-title{
+        color: rgba(24, 24, 24, 1);
+        font-size: 85px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        
+
+    }
+
+    .banner-des{
+        color: #757575;
+        width: 585px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .banner-btn{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+
+    .download-btn{
+        width: 200px;
+        height: 64px;
+       
+    }
+
+
+    .contact-btn{
+        color: #fd6e0a;
+        width: 160px;
+        height: 64px;
+        background: rgba(255, 248, 243, 1);
+        border: 1px solid rgba(253, 110, 10, 1);
+        margin-left: 30px;
+        
+        
+        
+
+    }
+    .contact-btn:hover{
+        background-color: #fd6e0a;
+        color: aliceblue;
+    }
+
+    .banner-img img{
+        display:block;
+       
+    }
+
+
+    /* Responsive for small devices */
+@media screen and (max-width:576px) {
+
+    nav{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    nav ul{
+        margin-top: 20px;
+    }
+   
+    .nav-btn {
+        width: 100px;
+        height: 50px;
+       
+    }
+
+    .banner-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0px
+      
+    }
+    .banner-contents{
+        margin: 20px 20px 40px 20px ;
+    }
+    .hero-greeting{
+        font-size: 35px;
+        
+        
+    }
+    .hero-title{
+        font-size: 45px;
+        
+    }
+
+    .banner-des{
+        width: 350px;
+        
+    }
+    .banner-btn{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20px;
+        gap: 10px;
+     }
+     .download-btn,
+     .contact-btn{
+        width: 180px;
+     }
+     .contact-btn{
+        margin-left: 0px;
+     }
+
+    .banner-img img{
+        width: 300px;
+        
+    }
+   
+}
+ 
