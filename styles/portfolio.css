@@ -39,9 +39,8 @@
 
     header{
         background:rgba(255, 248, 243, 1);
-        background-image: url("../portfolio-resources/images/developer.png"),
-        url("../portfolio-resources/images/header_bg.png") ;
-
+        background-image: url("../images/developer.png"),
+        url("../images/header_bg.png");
         background-repeat: no-repeat;
         background-position: top left , bottom right;
         background-position-y : center , bottom;
@@ -223,6 +222,66 @@
         color: #757575;
     }
 
+/* What I Do Section Styles */
+
+    #what-i-do-section{
+        margin-top: 130px;
+    }
+
+    .section-title{
+        color: #181818;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .section-description{
+        color: #757575;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        margin:30px auto 0 auto;
+        width: 909px;
+    }
+
+    #skills-card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
+
+
+    }
+
+    .skill-card{
+        box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        background: #ffffff;
+        width: 300px;
+        padding: 40px;
+    }
+
+    .card-contents{
+        margin-top:20px
+    }
+
+    .card-contents h4{
+        color: #181818;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .card-contents p{
+        color: #757575;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        width: 200px;
+    }
+
 /* Responsive for small devices */
     @media screen and (max-width:576px) {
 
@@ -243,7 +302,7 @@
         }
 
         header{
-        background-image:url("../portfolio-resources/images/header_bg.png") ;
+        background-image:url("../images/header_bg.png") ;
         background-repeat: no-repeat;
         background-position: bottom right;
         
@@ -324,9 +383,32 @@
         .about-me-info-container p ,.about-me-info-container h5{
             font-size: 18px;
         }
+
+    /* What I Do Section Responsive */
+
+        #what-i-do-section{
+        margin-top: 50px;
+        }
+
+        .section-description{
+            line-height: normal;
+            margin: 20px auto 0 auto;
+            width: 300px;
+        }
+
+        #skills-card-container{
+            flex-direction: column;
+            gap: 30px;
+        }
+
+     
        
    
     }
+
+   
+
+
  
 /* Responsive For Medium Device */
     @media screen and (min-width:576px) and (max-width:992px){
@@ -338,7 +420,7 @@
         }
 
         header{
-        background-image:url("../portfolio-resources/images/header_bg.png") ;
+        background-image:url("../images/header_bg.png") ;
         background-repeat: no-repeat;
         background-position: bottom right;
         
