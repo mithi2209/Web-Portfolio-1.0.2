@@ -492,4 +492,21 @@
             
         }
 
+    /* What I Do Section Responsive */
+        #what-i-do-section{
+            margin-top: 80px;
+        }
+
+        .section-description {
+            margin: 20px auto 0 auto;
+            width: 680px;
+        }
+
+        #skills-card-container {
+            flex-wrap: wrap;
+        }
+        .skill-card{
+            
+        }
+
     }
