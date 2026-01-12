@@ -15,7 +15,7 @@
 
     .container{
         max-width: 1400px;
-        margin: auto;
+        margin: 0 auto;
     }
 
 /* Shared Styles */
@@ -282,6 +282,52 @@
         width: 200px;
     }
 
+/* Resume Section Styles */
+    #resume-section{
+        margin-top: 130px;
+    }
+
+    .resume-contents-container{
+        margin: 113px auto;
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+  
+    .resume-title{
+        color: #474747;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .info-heading{
+        color: #474747;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .info-title{
+        color: #757575;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .info-des{
+        width: 450px;
+        line-height: 30px;
+        color:#757575;
+
+    }
+
+    .resume-contents-container hr{
+        margin: 30px auto;
+        width: 600px;
+    }
+    
 /* Responsive for small devices */
     @media screen and (max-width:576px) {
 
@@ -354,7 +400,7 @@
         /* About Me Section Responsiveness */
         .about-me-section-container{
             margin-top: 70px;
-            padding: 40px;
+            padding: 25px;
         }
 
         .about-me-contents-container{
@@ -390,6 +436,9 @@
         margin-top: 50px;
         }
 
+        .section-title{
+            font-size: 30px;
+        }
         .section-description{
             line-height: normal;
             margin: 20px auto 0 auto;
@@ -400,6 +449,45 @@
             flex-direction: column;
             gap: 30px;
         }
+        .skill-card{
+            width: 340px;
+        }
+        .card-contents p{
+            width: 280px;
+        }
+    /* Resume Section Styles Resposive*/
+        #resume-section{
+            margin-top: 70px;
+        }
+        
+        .resume-contents-container{
+            flex-direction: column;
+            margin: 50px auto;
+            gap: 10px;
+        }
+        
+        .resume-title{
+            text-align: left;
+        }
+
+        .info-heading{
+            font-size: 20px;
+        }
+
+        .info-title{
+            font-size: 18px;
+        }
+
+        .info-des{
+            font-size: 16px;
+            line-height: normal;
+            width: 270px;
+        }
+        .resume-contents-container hr{
+            /* margin: 30px 0; */
+            width: 320px;
+        }
+
 
      
        
@@ -505,8 +593,25 @@
         #skills-card-container {
             flex-wrap: wrap;
         }
-        .skill-card{
-            
+       
+
+/* Resume Section Styles Resposive*/
+
+        #resume-section{
+            margin-top: 70px;
+        }
+        
+        .resume-contents-container{
+            flex-direction: column;
+            margin: 50px auto;
+            gap: 10px;
+        }
+        .info-heading{
+            font-size: 20px;
+        }
+
+        .info-title{
+            font-size: 18px;
         }
 
     }
