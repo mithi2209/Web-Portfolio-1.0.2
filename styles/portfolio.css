@@ -288,7 +288,7 @@
     }
 
     .resume-contents-container{
-        margin: 113px auto;
+        margin: 113px auto 0 auto;
         display: flex;
        justify-content: center;
         align-items: center;
@@ -326,6 +326,68 @@
     .resume-contents-container hr{
         margin: 30px auto;
         width: 600px;
+    }
+
+    .resume-btn{
+        text-align: center;
+    }
+
+/* Footer Section Styles */
+
+    footer{
+        background: #fff8f3;
+    }
+
+    #footer{
+        margin-top: 113px;
+        padding: 130px 0;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        gap: 116px;
+    }
+    .footer-content-title{
+        color: #181818;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .footer-content-text{
+        color: #757575;
+        width: 562px;
+        line-height: 28px;
+    }
+    .footer-social-links{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 24px;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form input[type="email"],
+    .footer-container form textarea
+    {
+        color: #757575;
+        width: 461px;
+        padding: 20px 30px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        background: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+    .sumbit-btn{
+        width: 150px;
+        padding: 20px;
+    }
+
+    .copyright-text {
+        color: #757575;
+        text-align: center;
+        font-weight: 500;
     }
     
 /* Responsive for small devices */
@@ -462,7 +524,7 @@
         
         .resume-contents-container{
             flex-direction: column;
-            margin: 50px auto;
+            margin: 50px auto 0 auto;
             gap: 10px;
         }
         
@@ -487,11 +549,38 @@
             /* margin: 30px 0; */
             width: 320px;
         }
-
-
-     
        
-   
+        /* Footer Section Responsive */
+        #footer{
+            margin-top: 70px;
+            padding: 40px;
+        }
+        .footer-container{
+            flex-direction: column;
+            gap: 80px;
+    
+        }
+        .footer-content-title{
+            font-size: 28px;
+        }
+        .footer-content-text{
+            width: 300px;
+        }
+
+        .footer-container form input[type="text"],
+        .footer-container form input[type="email"],
+        .footer-container form textarea{
+            width: 100%;
+        }
+        .sumbit-btn{
+            padding: 18px;
+        }
+
+        .copyright-text{
+            font-size: 14px;
+            font-weight: 500;
+
+        }
     }
 
    
@@ -598,12 +687,12 @@
 /* Resume Section Styles Resposive*/
 
         #resume-section{
-            margin-top: 70px;
+            margin-top: 80px;
         }
         
         .resume-contents-container{
             flex-direction: column;
-            margin: 50px auto;
+            margin: 50px auto 0 auto;
             gap: 10px;
         }
         .info-heading{
@@ -612,6 +701,28 @@
 
         .info-title{
             font-size: 18px;
+        }
+
+/* Footer Section Styles */
+
+        #footer{
+            margin-top: 80px;
+            padding: 80px;
+        }
+        .footer-container{
+            flex-direction: column;
+            gap: 80px;
+
+        }
+
+        .footer-content-text {
+            width: 430px;
+        }
+
+        .footer-container form input[type="text"],
+        .footer-container form input[type="email"],
+        .footer-container form textarea {
+            width: 100%;
         }
 
     }
