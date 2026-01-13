@@ -449,6 +449,8 @@
         .download-btn,
         .contact-btn{
             width: 180px;
+            font-size: 18px;
+            font-weight: 600;
         }
         .contact-btn{
             margin-left: 0px;
